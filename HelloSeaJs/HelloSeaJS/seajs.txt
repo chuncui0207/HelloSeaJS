@@ -1,0 +1,18 @@
+1、新建 package.json
+{
+    "name": "my-grunt-demo",
+    "version": "0.1.0",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-less": "*",
+        "grunt-contrib-watch": "*"
+    }
+}
+
+2、命令切换到package.json文件夹目录下，输入 npm install 安装 package.json 里面依赖的包；
+
+3、新建Gruntfile.js
+
+
+idleading :模块ID的前缀
+include：relative的含义是合并采用相对路径依赖的模块

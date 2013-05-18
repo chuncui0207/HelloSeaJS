@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+body { 
+    font-family: "Microsoft Yahei",Arial,sans-serif;
+    font-size: 14px;
+    -ms-font-size: 14px;/* IE 9 */
+	-webkit-font-size: 14px;/* Safari and Chrome */
+	-o-font-size: 14px;/* Opera */
+	-moz-font-size: 14px;/* Firefox */
+	color:#222;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, form, input, p, th, td, img, ul, li, em {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+th {
+	font-weight:normal;
+}

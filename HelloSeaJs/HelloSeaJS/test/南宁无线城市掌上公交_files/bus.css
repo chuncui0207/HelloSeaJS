@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.apps_tabbox { margin:0; }
+.apps_searchbox .apps_tabw td { padding-left: 20px; }
+.apps_searchbox .apps_tabw td.apps_forlbbtn { padding-left: 10px; }
+
+.apps_goto { font-size:14px; color:#222; padding:10px 0 5px 5px;}
+.apps_des { padding:5px; border-bottom:1px solid #dcdcdc; padding-bottom:8px;} 
+.apps_des a { margin:0 15px 0 0; }
+.apps_tablelisttwo { display:block; height:auto; overflow:hidden; }
+.apps_tablelisttwo li { width:47%; float:left; }
+
+.apps_search {
+    padding: 0;
+    position: relative;
+	overflow:hidden;
+}
+.apps_search_table {
+    width: 100%;
+	margin:15px 0 0 0;
+}
+
+
+.apps_search_table th { padding-left:5px; }
+
+.apps_forlbbtn { padding:0 5px 0 10px; }
+
+.apps_result .apps_table_list td { padding:8px 5px; }
+
+.apps_tab1, .apps_tab2, .apps_tab3 { padding-bottom:15px; float:left; }
+
+.apps_result .apps_table_list td { width:50%; }
+.apps_forlbbtn {
+    padding: 0 20px 0 10px;
+}
+.apps_search_table .apps_hs .apps_wrongmsn { padding-left: 0;}
+
+.apps_linkslist .apps_title3 {
+    height:auto;
+    line-height: 24px;
+    padding: 4px 0 4px 5px;    
+}
+.apps_linkslist .apps_title3 .apps_tit3txt { padding-left: 20px; display: block; background: url(../images/bus.png) no-repeat 0 4px; }
+.apps_have_ico img { vertical-align: top; margin-top: 1px; }
+.apps_return { margin:8px 0 0 5px; }
+.apps_return a{ display:block; width:103px; height:28px; line-height:28px; background: url(../images/return_ar.png) no-repeat left center; text-align:center; padding-left:10px; }

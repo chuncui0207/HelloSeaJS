@@ -1,0 +1,541 @@
+@charset "utf-8";
+/* CSS Document */
+body { background-color:#F8F8F8; padding:0; margin:0; }
+ul, li {
+	list-style-type: none;
+}
+.apps_main { max-width:800px; min-width:320px;	margin:0 auto;line-height: 25px;}
+.apps_content { background-color:#F8F8F8; }
+.apps_4font { width:5em; white-space:nowrap;}
+.apps_3font { width:70px; text-align:right;}
+.apps_5font { width:70px; text-align:right; }
+.apps_forpage {text-align:center; padding:15px 0;}
+.apps_page{text-align: center;}
+
+/*城市列表*/
+.apps_citylist { padding:5px 0 0 0; }
+.apps_citylist ul { height:auto; overflow:hidden; clear:both; }
+.apps_citylist ul li { display:inline-block; float:left; padding:5px; width:66px; line-height:30px; text-align:center; }
+.apps_citylist ul li a { display:block; }
+.apps_citylist ul li.apps_cur a { background-color:#FE8710; color:#FFF; border-radius:2px; }
+
+/*日历控件样式*/
+.ui-datepicker { border:1px solid #b1c6d6; background-color:#FFF; padding:5px; display:none; }
+.ui-datepicker a { color:#425B9D; text-decoration:none; }
+.ui-datepicker-header { margin-bottom:5px; }
+.ui-datepicker-header .ui-datepicker-prev { width:13px; height:13px; background:url(../images/ico_dpleft.gif) no-repeat left top; display:inline-block; position:absolute; left:3px; top:5px; cursor:pointer; }
+.ui-datepicker-header .ui-datepicker-prev .ui-icon, .ui-datepicker-header .ui-datepicker-next .ui-icon { display:none; }
+.ui-datepicker-header .ui-datepicker-next { width:13px; height:13px; background:url(../images/ico_dpright.gif) no-repeat left top; display:inline-block; position:absolute; right:3px; top:5px; cursor:pointer; }
+.ui-datepicker-header .ui-datepicker-title { padding:0 18px; height:13px; line-height:13px; text-align:center; font-size:14px; color:#0d68c1; }
+.ui-datepicker-header .ui-datepicker-title span { font-size:14px; }
+.ui-datepicker-calendar thead th { border-bottom:1px solid #ccc; padding:2px 3px; }
+.ui-datepicker-calendar thead th span { color:#222; font-size:14px; }
+.ui-datepicker-calendar thead th.ui-datepicker-week-end span { color:#cc0000; }
+.ui-datepicker-calendar tbody .ui-state-disabled  { color:#888; }
+.ui-datepicker-calendar tbody td { padding:4px; }
+.ui-datepicker-calendar tbody td .ui-state-default { font-size:14px; }
+.ui-datepicker-calendar .ui-datepicker-week-end .ui-state-default { color:#cc0000; }
+.ui-datepicker-calendar .ui-datepicker-week-end  .ui-state-disabled .ui-state-default a { color:#888; }
+.apps_fordp .ui-datepicker-trigger { position:absolute; right:-1px; top:1px; cursor:pointer; }
+
+/*应用查询表单*/
+.apps_search { position:relative; padding:15px 5px; }
+.apps_search_table { width:100%; }
+.apps_search_table th, .apps_search_table td { height:30px; line-height:30px; }
+.apps_search_table th { text-align: right;}
+.apps_search_table tr.apps_bpadding th, .apps_search_table tr.apps_bpadding td { padding-bottom:15px; }
+.apps_input_text { width:100%; height:28px; line-height:28px; border:1px solid #88a5bb; font-size:12px; color:#888; background:url(img/input_text_bg.png) repeat-x left top; }
+.apps_input_text_focus { width:100%; height:28px; line-height:28px; border:1px solid #88a5bb; font-size:14px; color:#222; background:url(img/input_text_bg.png) repeat-x left top; }
+.apps_input_text_focus:focus { border:1px solid #42A4E0; box-shadow: 0 0 0 2px rgba(73, 173, 227, 0.4); transition: all 0.1s linear 0s; }
+.apps_fordp { position:relative; height:30px; line-height:18px;}
+.apps_select_list { width:100%; height:28px; line-height:28px; border:1px solid #88a5bb; font-size:14px; color:#222; }
+.apps_tax_width {width:100%;  height:28px; line-height:28px;  color:#888;font-size:12px;border:1px solid #88a5bb;}
+/*.apps_lbbtn { width:90px; height:30px; background:url(../images/lightbluebtn_bg.png) no-repeat left top; border:none; color:#425c9e; font-size:16px; cursor:pointer; }*/
+.apps_forlbbtn .apps_lbbtn { width:90px; height:30px; display:block; background:url(img/two_btn_bg.png) no-repeat left top; border:none; color:#425c9e; font-size:16px; cursor:pointer; text-align:center; }
+.apps_forlbbtn .apps_lbbtn:hover { background:url(img/two_btn_bg.png) no-repeat 0 -40px; color:#FFF; }
+.apps_forlbbtn .apps_lbbtn:active { background:url(img/two_btn_bg.png) no-repeat left bottom; color:#FFF; }
+.apps_forlbbtn { width:90px; height:30px; padding-left:10px; cursor:pointer; }
+.apps_inputtips td.tiptext { height:16px; line-height:16px; vertical-align:top; padding-top:2px; color:#555; font-size:12px; text-align:justify; }
+.apps_inputtips td.tiptext img { vertical-align:middle; margin-right:3px; }
+.apps_inputtips td.apps_wrongmsn { color:#F00; }
+.apps_inputtips td.apps_wrongmsn span { font-size: 12px; }
+.apps_inputtips td.apps_truemsn { color:#42BB37; }
+.apps_search_table td.apps_have_ico { width:30px; padding-right:4px; }
+.apps_tab2, .apps_tab3 { display:none; }
+.apps_displaynone { display:none; }
+.apps_displayblock { display:block; }
+td.apps_identifying { width:64px; padding-left:10px; }
+td.apps_identifying img { vertical-align:middle; }
+.apps_search_table .apps_nopadding { padding-left:0; }
+
+/*温馨提示*/
+.apps_warm_tips { font-size:12px; color:#888; line-height:22px; margin:0 5px 5px; }
+.apps_warm_tips .apps_warm_title { font-size:14px; color:#FC4519; padding-bottom:1px; }
+.apps_warm_tips .apps_warm_number { vertical-align:top;}
+.apps_warm_tips .apps_warm_message { font-size:12px; text-align:justify;}
+.apps_warm_tips .apps_warm_message a { font-size: 12px; }
+.apps_warm_tips .apps_redico{ color:#F00}
+
+/*加载*/
+.apps_loading_tips {  width:80%;  padding:10px;border-radius:6px; border:1px solid #B1BFDC; margin:0 auto; background:url(../images/loading_bg.png) repeat-x left bottom #FFF; z-index:99999; position:fixed; left:7%; top:10%; display:none; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);}
+.apps_loading_tips table { width:100%; }
+.apps_loading_tips table th { width:32px; padding-right:10px; vertical-align:middle; }
+.apps_loading_tips .apps_loadingimg { vertical-align:middle; display:inline; }
+
+/*遮蔽层*/
+.apps_overlay { background: url(../images/apps_overlay_bg.png) repeat-x scroll 50% 50% #AAAAAA; display:none;
+    opacity: 0.35; filter:alpha(opacity=35); width:100%; height:100%; position:absolute; top:0; left:0; right:0; bottom:0; z-index:888; }
+
+/*查询结果*/
+.apps_result { margin:0 0 10px 0; }
+.apps_result .apps_table_list {}
+.apps_result .apps_table_list th { padding-left:5px; vertical-align:top; text-align:right; }
+.apps_result .apps_table_list th.appsfour { text-align:left; }
+.apps_result .apps_table_list td { padding-right:5px; }
+.apps_result .apps_table_list .apps_trodd th, .apps_result .apps_table_list .apps_trodd td { background-color:#f4f6fa; border-bottom:1px solid #c3c5c8; border-top:1px solid #FFF; }
+.apps_result .apps_table_list .apps_treven th, .apps_result .apps_table_list .apps_treven td { background-color:#e7eaf0; border-bottom:1px solid #c3c5c8; border-top:1px solid #FFF; }
+.apps_result .apps_table_list .apps_trodd:hover th, .apps_result .apps_table_list .apps_trodd:hover td { background-color:#ffffcc;}
+.apps_result .apps_table_list .apps_treven:hover th, .apps_result .apps_table_list .apps_treven:hover td { background-color:#ffffcc; }
+.apps_result .apps_table_list th, .apps_result .apps_table_list td { padding-top:8px; padding-bottom:8px; }
+.apps_result .apps_table_list .apps_money { color:#FF3F1C; }
+.apps_result .apps_table_list .apps_month a { margin-right:6px; }
+.apps_result .apps_table_list .apps_curmonth { color:#FF3F1C; cursor:default; background-color:#FFFE9E; border-radius:4px; padding:4px 6px; border:1px solid #ffe29e; }
+.apps_btstar { width:12px; color:#F00; line-height:30px; text-align:center; }
+
+/*查找不到结果*/
+.apps_noresult { font-size:14px; color:#F00; text-align:center; }
+
+/*提示弹出框*/
+.apps_dlwin { border:4px solid #B1BFDC; border-top:none; max-height:176px; min-height:126px; width:272px; position:fixed; z-index:999; left:30%; right:0; top:0; bottom:0; background-color:#FFF; }
+.apps_dlwin .apps_wintop { height:36px; line-height:36px; background-color:#B1BFDC; position:relative; }
+.apps_dlwin .apps_wintop .apps_title { margin-left:4px; display:block; height:36px; line-height:36px; }
+.apps_dlwin .apps_wincont { padding:4px; }
+.apps_dlwin .apps_wincont .apps_text { color:#222; text-align:center; vertical-align:middle; font-size:12px; line-height:22px; }
+.apps_winclose { width:15px; height:15px; position:absolute; top:10px; right:4px; background:url(../images/apps_winclose.gif) no-repeat left top; display:block; }
+
+/*链接列表*/
+.apps_linkslist { background: none repeat scroll 0 0 #F3F5F9; clear: both; }
+.apps_title3 { background: -moz-linear-gradient(center top , #FEFEFE, #D9D9E3 100%) repeat scroll 0 0 transparent; border-bottom: 1px solid #8C9BB8;  border-top: 1px solid #D8D8E2;  color: #222; height: 32px; line-height: 32px;    padding-left: 7px; }
+.apps_linkslist .apps_linksul { }
+.apps_linkslist .apps_linksul li {  background: url(../images/touch_01.gif) no-repeat scroll right center transparent; border-top:1px solid #FFF; border-bottom: 1px solid #E8E8F0; clear: both; color: #555555; line-height: 32px; padding: 0 15px 0 5px; }
+.apps_linkslist .apps_linksul li:hover { background-color:#FFFFCC; }
+.apps_linkslist .apps_linksul li a { color:#425B9D; display: block; }
+
+/*表格块级列表*/
+.apps_tablelist {}
+.apps_tablelist li {border-top: 1px solid #fff; border-bottom: 1px solid #E8E8F0; clear: both; color: #555555; padding: 4px 10px 4px 0; }
+.apps_tablelist li.apps_oddli { background-color:#edf0f6; }
+.apps_tablelist li.apps_evenli { background-color:#F5F6FA; }
+.apps_tablelist li .apps_tblist th, .apps_tablelist li .apps_tblist td { padding:4px 0; color:#222; }
+.apps_tablelist li .apps_tblist th { padding-left:5px; text-align:right; }
+.apps_tablelist li .apps_tblist td { padding-right:5px; }
+.apps_result .apps_table_list .apps_colspan th { text-align:left; padding:8px 5px; }
+.apps_linkslist .apps_tablelist .apps_colspan th { text-align:left; padding:4px 5px; }
+.apps_money { color: #FF3F1C; }
+.apps_tablelist li.apps_oddli .apps_tblist tr:hover th, .apps_tablelist li.apps_oddli .apps_tblist tr:hover td { background-color:#FFFFCC; }
+.apps_tablelist li.apps_evenli .apps_tblist tr:hover th, .apps_tablelist li.apps_evenli .apps_tblist tr:hover td { background-color:#FFFFCC; }
+
+/*表格列表2*/
+.apps_table_two { margin:5px 0 0; }
+.apps_table_two .apps_head th { padding:6px; background-color:#637fc9; color:#FFF; font-size:16px; }
+.apps_table_two .apps_trodd td, .apps_table_two .apps_treven td { padding:6px; border:1px solid #c6cee5; border-bottom:1px solid #c3c5c8; text-align:center; }
+.apps_table_two .apps_trodd td { background-color:#f4f6fa; }
+.apps_table_two .apps_treven td { background-color:#e7eaf0; }
+.apps_table_two td .apps_price { color:#FF3F1C; }
+
+.apps_sm { font-size:12px; color:#555; margin:6px 0 0 5px; }
+
+/*分页*/
+.apps_page { height: 28px; line-height: 28px; padding: 10px 0; text-align: center; }
+.apps_page input { background: none repeat scroll 0 0 #F0F5F8; border: 1px solid #B2C0E0; height: 24px; line-height: 24px; margin: 0; overflow: hidden; padding: 0 10px; width: 20px; }
+.apps_page .apps_fl { float: left;}
+
+/*橙色购买类按钮*/
+.apps_buybtn {  background: url(../images/orange_btn.png) no-repeat scroll left top #FC4519; color: #FFFFFF; cursor: pointer; font-size: 16px; font-weight: normal; height: 30px; line-height: 30px; outline: medium none; text-align: center; width: 90px; border:none; }
+.apps_buybtn:hover { background: url(../images/orange_btn.png) no-repeat scroll 0 -40px #FC4519; }
+.apps_buybtn:focus { background: url(../images/orange_btn.png) no-repeat scroll left bottom #FC4519; }
+
+/*选项卡Tab*/
+.apps_tabbox { border:1px solid #b2c0e0; }
+.apps_tabbox .apps_tabul { background:url(img/tab_headline.png) repeat-x left top; height:35px; line-height:35px; padding:0 13px; }
+.apps_tabbox .apps_tabul li { height:33px; line-height:33px; text-align:center; float:left; cursor:pointer; width: 33%; color: #425c9e; }
+.apps_tabbox .apps_tabul li.apps_cur { border-bottom:2px solid #ff3200; }
+
+/*单选列表*/
+.apps_data_chek .apps_radio_ul { height:auto; overflow:hidden; }
+.apps_data_chek .apps_radio_ul li { color: #222222; font-size: 14px; height:auto; line-height: 24px; padding:4px 0 4px 30px; position:relative; }
+.apps_data_chek .apps_radio_ul li .apps_radio_image { position:absolute; top:9px; left:0; }
+
+
+
+/*城市列表名称*/
+
+.apps_data_list { height: auto; width: 100%; }
+.apps_data_list ul {margin: 4px 0 4px 5px; height:auto; overflow:hidden; }
+
+.apps_data_list ul li{ list-style: none; float: left; margin:4px 10px 4px 0; }
+.apps_data_list ul li a { font-family: "Microsoft Yahei",Arial,sans-serif; }
+.apps_data_view { height: auto; width: 100%; }
+.apps_data_view ul { margin:5px 0 8px 5px; }
+.apps_data_view .apps_chticket li { height:auto; padding:6px 6px 6px 0; line-height:18px; overflow:auto; font-family:"Microsoft Yahei",Arial,sans-serif; color:#222; }
+.apps_data_view .apps_chticket li input { margin-right:4px; }
+.apps_data_chek { height: auto; width: 100%; }
+.apps_data_chek ul { margin:5px 0 8px 0; }
+.apps_data_chek .apps_chticket li { height:auto; padding:6px 6px 6px 0; line-height:18px; overflow:auto; font-family:"Microsoft Yahei",Arial,sans-serif; color:#222; }
+.apps_data_chek .apps_chticket li input { margin-right:4px; }
+
+.apps_data_chek a { font-family:"Microsoft Yahei",Arial,sans-serif; }
+
+.apps_data_chek ul li{ height: 28px; line-height: 28px; overflow: hidden; font-size: 14px; color: #222;}
+.apps_title_head {background: -moz-linear-gradient(center top , #FEFEFE, #D9D9E3 100%) repeat scroll 0 0 transparent;border-bottom: 1px solid #8C9BB8;border-top: 1px solid #D8D8E2;color: #555555;height: 32px;line-height: 32px;margin-top: 10px;padding-left: 7px;}
+#apps_list_ctiy { color:#ff0000}
+#apps_list_ctiy_001 {color:#ff0000}
+#apps_list_ctiy_002 {color:#ff0000; background:none; border:none;}
+
+/*虚线*/
+#apps_newsolid {border-bottom:1px dotted rgb(11,154,255); margin:0;}
+#apps_newsolid_2 {border-bottom:1px dotted rgb(11,154,255); margin-bottom:15px;}
+	
+/*表格线条*/
+
+.apps_datatable_3 {
+    border-collapse: collapse;
+	margin-bottom:20px;
+	margin:0 auto;
+	margin-bottom:20px;
+	font-size:14px;
+    }
+
+.apps_datatable_3 td {
+    border:1px solid #dddddd;
+	
+    }
+.apps_datatable_3 th {
+	border: 1px solid  #dddddd;
+    background-color: #8DB7FF;
+    text-align: left;
+    padding-left: 4px;
+	padding:5px 0;
+	font-weight:normal;
+
+    }
+	
+
+/*加载*/
+.apps_loading_conter {  width:40%;  padding:10px;border-radius:6px; border:1px solid #B1BFDC; margin:0 auto; background:url("../images/loading_bg.png") repeat-x left bottom #FFF; z-index:99999; position:absolute; left:30%; top:45%; display:none; }
+
+	/* =========================单选框============================= */
+.apps_radio_style{ font-size:12px;}
+.apps_radio_image{margin-left:4px;width:20px;height:20px; vertical-align:middle;}
+.apps_radio_style span{display:inline-block; vertical-align:top; height:20px; line-height:20px;}
+.apps_radio_style .apps_radio_text { margin-right:20px; }
+
+/*按钮*/
+.apps_como_btn2 { width:90px; height:30px; line-height:30px; font-size:16px;  text-align:center; background:url("../images/orange_btn.png") no-repeat left top #fc4519; color:#fff; outline:none; cursor:pointer; font-weight:normal; }
+
+/*徐领*/
+
+/*城市列表名称*/
+.apps_conter_text { position:relative; padding:15px 0; }
+.apps_data_list { height: auto; width: 100%; }
+.apps_data_list ul {margin: 4px 0 4px 5px; height:auto; overflow:hidden; }
+
+.apps_data_list ul li{ list-style: none; float: left; margin:4px 10px 4px 0; }
+.apps_data_list ul li a { font-family: "Microsoft Yahei",Arial,sans-serif; text-decoration:none; color:#425B9D; display:inline-block; padding:2px 4px; border:1px solid #fff; }
+.apps_data_list ul li a:hover { background-color:#e8eff5; border:1px solid #dfe5eb; }
+.apps_data_list ul li a.apps_seleted { background-color:#FFFE9E; border:1px solid #FFE29E; color: #FF3F1C; }
+.apps_data_view { height: auto; width: 100%; }
+.apps_data_view ul { margin:5px 0 8px 5px; }
+.apps_data_view .apps_chticket li { height:auto; padding:6px 6px 6px 0; line-height:18px; overflow:auto; font-family:"Microsoft Yahei",Arial,sans-serif; color:#222; }
+.apps_data_view .apps_chticket li input { margin-right:4px; }
+.apps_data_chek { height: auto; width: 100%; }
+.apps_data_chek ul { margin:5px 0 8px 0; }
+.apps_data_chek .apps_chticket li { height:auto; padding:6px 6px 6px 0; line-height:18px; overflow:auto; font-family:"Microsoft Yahei",Arial,sans-serif; color:#222; }
+.apps_data_chek .apps_chticket li input { margin-right:4px; }
+.apps_title_tit {background: -moz-linear-gradient(center top , #FEFEFE, #D9D9E3 100%) repeat scroll 0 0 transparent;border-bottom: 1px solid #8C9BB8;border-top: 1px solid #D8D8E2;color: #555555;height: 32px;line-height: 32px;margin: 0 0 15px 0;padding-left: 7px;}
+.apps_title_tit span.more a{font-size:14px; color: #425c9e; text-decoration:none; font-weight:normal; line-height:32px; display:block;}
+.apps_title_tit span.more a:hover { color:#425c9e; }
+.apps_title_tit span.more { float:right; margin-right:10px;}
+.apps_title_tif {background: -moz-linear-gradient(center top , #FEFEFE, #D9D9E3 100%) repeat scroll 0 0 transparent;border-bottom: 1px solid #8C9BB8;border-top: 1px solid #D8D8E2;color: #555555;height: 32px;line-height: 32px;margin: 0 0 5px 0;padding-left: 7px;}
+
+
+.apps_data_chek a { font-family:"Microsoft Yahei",Arial,sans-serif; }
+
+.apps_data_chek ul li{ height: 28px; line-height: 28px; overflow: hidden; font-size: 14px; color: #222;}
+.apps_title_head {background: -moz-linear-gradient(center top , #FEFEFE, #D9D9E3 100%) repeat scroll 0 0 transparent;border-bottom: 1px solid #8C9BB8;border-top: 1px solid #D8D8E2;color: #555555;height: 32px;line-height: 32px;margin-top: 10px;padding-left: 7px;}
+.apps_maintext { font-size:14px; padding:10px; margin:0; line-height:24px; }
+.apps_maintext h2 { font-size:14px; color:#222; margin:0; padding:0; }
+.apps_maintext p { margin:0; padding:0; }
+.apps_agree { line-height:24px; padding:0 10px; font-size:14px; color:#222; }
+.apps_agree table { margin:0; padding:0; }
+.apps_agree input { margin:4px 4px 0 0; }
+#apps_list_ctiy { color:#ff0000}
+#apps_list_ctiy_001 {color:#ff0000}
+#apps_list_ctiy_002 {color:#ff0000; background:none; border:none;}
+#apps_list_ctiy_003 { background:none; border:none; display:inline-block;}
+#apps_radio_fucs { width:80px; height:130px; float:left;}
+
+
+/*虚线*/
+#apps_newsolid {border-bottom:1px dotted rgb(11,154,255); margin:0;}
+#apps_newsolid_2 {border-bottom:1px dotted rgb(11,154,255); margin-bottom:15px;}
+	
+/*表格线条*/
+
+.apps_datatable_3 {border-collapse: collapse; margin-bottom:20px;margin:0 auto; margin-bottom:20px;font-size:14px; }
+
+.apps_datatable_3 td {  border:1px solid #dddddd;
+	
+    }
+.apps_datatable_3 th {border: 1px solid  #dddddd;  background-color: #8DB7FF; text-align: left; padding-left: 4px;padding:5px 0;font-weight:normal; }
+	
+	
+/*应用查询表单*/	
+.apps_search_iupnt { position:relative; padding:15px 5px; }
+.apps_iupnt_table { width:100%; }
+.apps_iupnt_table th, .apps_iupnt_table td { height:30px; line-height:30px; }
+.apps_iupnt_table tr.apps_iupnting th, .apps_iupnt_table tr.apps_iupnting td { padding-bottom: 15px;  }
+.apps_marc { position:relative; padding:0 5px; }
+.apps_search_bable { margin:10px 5px; position:relative; }
+.apps_text_w { width:70px;line-height:16px; padding: 0 0 0 3px; text-align:left;  color:#222; font-size:14px;}
+.apps_text_w110 { width:110px;line-height:16px; padding:5px 0; text-align:center;   color:#222; font-size:14px;}
+.apps_text_wl { width:70px;line-height:16px;  text-align:left;  color:#222; font-size:14px;}
+.apps_text_wd { width:70px; text-align:left; padding:8px 0 10px;  color:#222; font-size:14px;}
+.apps_text_35 { width:70px; text-align:right;  padding:8px 5px 8px 0;  color:#222; font-size:14px;}
+.apps_text_wf { width:60px; text-align:left; padding:8px 0 10px 0;  color:#222; font-size:14px;}
+.apps_text_dd { width:80px; text-align:left; padding:5px 0 5px 5px;  color:#222; font-size:14px;}
+.apps_text_rd { width:60px;line-height:16px; padding: 8px 0 10px; text-align:left;  color:#222; font-size:14px;}
+.apps_table_wd { width:60px; text-align:left; padding:7px 0 8px 20px;  color:#222; font-size:14px;}
+.apps_table_wr { width:90px; height:30px; padding-left:10px;  }
+.apps_input_width {width:100%;  height:28px; line-height:28px;  color:#222;font-size:12px;border:1px solid #88a5bb;}
+.apps_putire { width:50px; }
+.apps_4table { width:50px; }
+.apps_70table { width:70px; text-align:right; padding-right:5px;}
+.apps_70table2 { width:70px; text-align:right; }
+.apps_70table_left { width:70px; text-align:right; padding-right:5px;}
+.apps_5tbble { color:#888;}
+.apps_50table { width:50px; }
+.apps_120table { width:120px; text-align:right;}
+.apps_120td { width:120px; text-align:right;}
+.apps_90td { width:100px; text-align:right;}
+.apps_70td { width:70px; text-align:right; white-space:nowrap;}
+.apps_tconter { width:7%; text-align: center; white-space:nowrap;}
+.apps_bottom_btn { height:30px;}
+.apps_bottombtn .apps_ttombtn { width:120px; height:30px; display:block; background:url(../images/two_btn_bg3.png) no-repeat left top; border:none; color:#425c9e; font-size:16px; cursor:pointer; text-align:center; }
+.apps_bottombtn .apps_ttombtn:hover { background:url(../images/two_btn_bg3.png) no-repeat 0 -40px; color:#FFF; }
+.apps_bottombtn .apps_ttombtn:active { background:url(../images/two_btn_bg3.png) no-repeat left bottom; color:#FFF; }
+.apps_bottombtn { width:120px; height:30px; cursor:pointer; }
+.apps_gocom {font-size:14px; color:#222; padding:8px 0 5px 5px;}
+.apps_gocon {font-size:14px; color:#222; padding:8px 0 5px 5px;text-align:center;}
+.apps_gocon_left {font-size:14px; color:#222; padding:8px 15px 5px 5px;text-align:left; font-family: "Microsoft Yahei"; font-size: 14px;}
+.apps_gocon_left p { margin: 0px; padding: 0px; color: rgb(34, 34, 34); font-family: "Microsoft Yahei";}
+.apps_gocon_left div {color: rgb(34, 34, 34); font-family: "Microsoft Yahei";}
+.apps_gocon_right {font-size:14px; color:#222; padding:8px 15px 5px 5px;text-align:right;}
+.apps_gocon_left {font-size:14px; color:#222; padding:8px 0 5px 5px;text-align:left; line-height:24px;}
+.apps_title_nn {font-size:14px; color:#222; padding:8px 0 5px 5px; text-align:center;}
+
+/*加载*/
+.apps_loading_conter {  width:40%;  padding:10px;border-radius:6px; border:1px solid #B1BFDC; margin:0 auto; background:url("../images/loading_bg.png") repeat-x left bottom #FFF; z-index:99999; position:absolute; left:30%; top:45%; display:none; }
+
+	/* =========================单选框============================= */
+.apps_radio_style{ font-size:12px;}
+.apps_radio_image{margin-left:4px;width:20px;height:20px; vertical-align:middle;}
+.apps_radio_style span{display:inline-block; vertical-align:top; height:20px; line-height:20px;}
+.apps_radio_style .apps_radio_text { margin-right:20px; }
+
+/*链接列表*/
+.apps_linksline { background: none repeat scroll 0 0 #F3F5F9; }
+.apps_title13 { background: -moz-linear-gradient(center top , #FEFEFE, #D9D9E3 100%) repeat scroll 0 0 transparent; border-bottom: 1px solid #8C9BB8;  border-top: 1px solid #D8D8E2;  color: #222; height: 32px; line-height: 32px;    padding-left: 7px; }
+.apps_linksline .apps_linksli { margin-bottom:10px;}
+.apps_linksline .apps_linksli li span.date a{font-size:14px; color: #888888; text-decoration:none; font-weight:normal; line-height:32px; display:block; }
+.apps_linksline .apps_linksli li span.date { float:right; margin-right:10px; }
+.apps_linksline .apps_linksli li { border-top:1px solid #FFF; border-bottom: 1px solid #E8E8F0; clear: both; color: #555555; line-height: 32px; padding: 0 10px 0 5px; }
+.apps_linksline .apps_linksli li:hover { background-color:#FFFFCC; }
+.apps_linksline .apps_linksli li a { color:#425B9D; }
+
+/*订购结果*/
+.apps_f_result{ text-align:center; font-size:14px; color:#ff0000; overflow:hidden; padding:10px 0 10px 0;}
+
+/*表格查询结果*/
+.apps_finally { margin:0 0 10px 0; }
+.apps_finally .apps_table_last {}
+.apps_finally .apps_table_last th { padding-left:5px; vertical-align:top; text-align:right; }
+.apps_finally .apps_table_last th.appsfour { text-align:left; }
+.apps_finally .apps_table_last td { padding-right:5px; }
+.apps_finally .apps_table_last .apps_sheet th, .apps_finally .apps_table_last .apps_sheet td { background-color:#f4f6fa; border-bottom:1px solid #c3c5c8; border-top:1px solid #FFF; }
+.apps_finally .apps_table_last .apps_treven th, .apps_finally .apps_table_last .apps_form td { background-color:#e7eaf0; border-bottom:1px solid #c3c5c8; border-top:1px solid #FFF; }
+.apps_finally .apps_table_last .apps_sheet:hover th, .apps_finally .apps_table_last .apps_sheet:hover td { background-color:#ffffcc;}
+.apps_finally .apps_table_last .apps_form:hover th, .apps_finally .apps_table_last .apps_form:hover td { background-color:#ffffcc; }
+.apps_finally .apps_table_last th, .apps_finally .apps_table_last td { padding-top:8px; padding-bottom:8px; text-align: center;}
+.apps_finally .apps_table_last .apps_money { color:#FF3F1C; }
+.apps_finally .apps_table_last .apps_month a { margin-right:6px; }
+.apps_finally .apps_table_last .apps_curmonth { color:#FF3F1C; cursor:default; background-color:#FFFE9E; border-radius:4px; padding:4px 6px; border:1px solid #ffe29e; }
+.apps_search_textbox {width:100%;height:28px;line-height:28px;color:#222;border:1px solid #88a5bb;margin-bottom:5px; background:url(../images/input_text_bg.png) repeat-x left top; }
+.apps_table_bg { background:#E7EAF0}
+.apps_tdtable {text-align:left; border-right:1px solid #ddd; border: 1px solid #ddd;}
+.apps_td_table {font-size:14px; color:#888; margin:5px 0 10px 5px; }
+.apps_hear { line-height:24px; color:#555555; text-align:left; padding-bottom:10px;}
+
+
+/*选项卡*/
+.apps_tab {
+	top: -2px; height: 36px; line-height: 36px; position: relative; background-color: rgb(66, 92, 158);
+}
+.apps_tab ul {
+	background: url("../images/tab_box_bg.png") repeat-x 0px 0px rgb(66, 92, 158); height: 36px;
+}
+.apps_tab li {
+	background: url("../images/tab_box_bg.png") repeat-x 0px 0px rgb(240, 243, 248); width: 100%; height: 34px; text-align: center; line-height: 34px; float: left; cursor: pointer;
+}
+.apps_tab li a {
+	padding: 0px 1px; height: 34px; line-height: 31px; display: inline-block;
+}
+.apps_tab .apps_list2 li {
+	width: 50%;
+}
+.apps_tab .apps_list3 li {
+	width: 25%;
+}
+.apps_tab .apps_list4 li {
+	width: 25%;
+}
+.apps_tab .apps_list5 li {
+	width: 20%;
+}
+.apps_tab .apps_curr a {
+	line-height: 34px; border-bottom-color: rgb(255, 60, 14); border-bottom-width: 2px; border-bottom-style: solid;
+}
+#apps_title_f55 {  line-height:32px; color:#555555; padding:0 10px 0 0; background:none; border:none;}
+#apps_title_f22 {  line-height:32px; color:#222222; padding:0 10px 0 0; background:none; border:none;}
+#apps_title_width {  line-height:32px; color:#555555; padding:0 10px 0 0; background:none; border:none; width:100%}
+#apps_mode_fc { color:#fc4519;}
+
+/*选项卡Tab*/
+
+.apps_tabline{ border-top:0; margin-top:0; }
+.apps_tabline .apps_tabul { background:url(../images/tab_headline.png) repeat-x left top; height:35px; line-height:35px; padding:0 13px; }
+.apps_tabline .apps_tabul li { height:33px; line-height:33px; padding:0 15px; text-align:center; float:left; margin-right:2px; cursor:pointer; }
+.apps_tabline .apps_tabul li.apps_cur { border-bottom:2px solid #ff3200; }
+.apps_busline {  overflow: hidden; margin-top:15px; visibility: visible; list-style: none; position: relative; }
+.apps_busline2 { position: relative; -webkit-transition: left 0ms ease-out; transition: left 0ms ease-out; width: 2394px; left: -798px;}
+.apps_busline3 { display: table-cell; height: 60px; width: 798px; padding: 0px; margin: 0px; float: left; vertical-align: top;}
+.apps_busline4 { display: table-cell; height: 100px; width: 798px; padding: 0px; margin: 0px; float: left; vertical-align: top;}
+
+/*出入境*/
+
+.apps_content a {
+	color: rgb(66, 92, 158); font-family: "Microsoft Yahei"; font-size: 14px; text-decoration: none;}
+.apps_content a:hover {color: rgb(66, 92, 158);}
+.apps_maintext {
+	margin: 0px; padding: 5px; line-height: 24px; font-family: "Microsoft Yahei"; font-size: 14px;
+}
+.apps_maintext div {
+	color: rgb(34, 34, 34); font-family: "Microsoft Yahei";
+}
+.apps_agree label {
+	color: rgb(34, 34, 34); font-family: "Microsoft Yahei";
+}
+.apps_maintext h2 {
+	margin: 0px; padding: 0px; color: rgb(34, 34, 34); font-family: "Microsoft Yahei"; font-size: 14px;
+}
+.apps_maintext p {
+	margin: 0px; padding: 0px; color: rgb(34, 34, 34); font-family: "Microsoft Yahei";
+}
+.apps_agree {
+	padding: 0px 10px; color: rgb(34, 34, 34); line-height: 24px; font-size: 14px;
+}
+.apps_agree table {
+	margin: 0px; padding: 0px;
+}
+.apps_agree input {
+	margin: 4px 4px 0px 0px;
+}
+.apps_pon {
+	height: 32px; text-align: center; line-height: 28px; margin-top:15px; margin-bottom: 15px; vertical-align: middle;
+}
+.apps_pon .apps_ponbtn {
+	margin: 0px 5px; width: 80px; height: 32px; line-height: 32px; vertical-align: top; display: inline-block;
+}
+.apps_pon a {
+ width: 80px; height: 32px; text-align: center; line-height: 32px; display: inline-block;
+}
+.apps_ponbtn .apps_next_btn {
+ border: currentColor; width: 80px; height: 32px; text-align: center; color: rgb(66, 92, 158); line-height: 32px; font-family: "Microsoft Yahei"; display: inline-block; cursor: pointer;
+}
+.apps_ponbtn .apps_next_btn:hover {
+	color: rgb(252, 69, 25);
+}
+.apps_ponbtn .apps_next_btn:focus {
+	color: rgb(252, 69, 25);
+}
+.apps_select {
+	margin: 0px; line-height: 24px;
+}
+.apps_select a {
+	margin: 0px 2px 0px 3px;
+}
+.apps_page {
+	padding: 10px 0px; text-align: center; font-size: 14px;
+}
+.apps_nopre {
+	color: rgb(136, 136, 136);
+}
+.apps_nonext {
+	color: rgb(136, 136, 136);
+}
+.apps_page .apps_pre {
+	margin-right: 7px;
+}
+.apps_page .apps_next {
+	margin-left: 7px;
+}
+.apps_page .apps_num {
+	color: rgb(85, 85, 85);
+}
+.apps_page .apps_surplus {
+	color: rgb(85, 85, 85); margin-left: 8px;
+}
+.apps_linklist {
+	margin: 5px;
+}
+.apps_linklist .apps_llul li {
+	 padding: 5px 0px 5px 10px; line-height: 18px; font-size: 14px;
+}
+.apps_text p {
+	line-height: 22px; margin-bottom: 10px;
+}
+.apps_links {
+	padding: 5px 0px 0px 5px; line-height: 24px; font-size: 0px;
+}
+.apps_links a {
+	font-size: 14px; white-space: nowrap;
+}
+.apps_links span {
+	margin: 0px 4px 0px 3px; color: rgb(85, 85, 85); font-size: 14px; white-space: nowrap;
+}
+
+/*返回*/
+.apps_getlocation .apps_back{ background:url("../images/goBack.png") no-repeat left; margin-left:5px; }
+.apps_getlocation{ clear:both; background:#F3F5F9; height:30px; line-height:30px; font-size:14px; }
+.apps_getlocation span{display:inline;}
+.apps_getlocation .apps_gotoTop{ background:url(../images/gotoTop.png) no-repeat right;float:right; margin-right:10px;}
+.apps_getlocation .apps_gotoTop a{  margin-right:18px;}
+.apps_getlocation .apps_back a{ margin-left:18px; color:#425c9d; text-decoration: none;}
+
+/*客运查询结果*/
+
+.apps_result_2 { height: auto; overflow: hidden;}
+.apps_result_2 ul {list-style: none outside none;padding: 0;width: 100%;}
+.apps_result_2 ul li {float: left;line-height: 5px; list-style: none outside none; margin-left: 5px;margin-right: 15px;padding: 8px 0;}
+.apps_fourfont {font-size: 14px;margin: 10px 5px;}
+.apps_newslist { margin: 11px 5px;}
+
+/*列车查询文字列表*/
+.apps_newslist ul, .apps_newslist li {list-style-type: none;}
+.apps_newslist li {line-height: 19px; padding: 4px 0;}
+.apps_goto {font-size:14px; color:#222; margin:5px 0 10px 5px;}
+.apps_got {font-size:14px; color:#222; margin:5px 0 10px 5px;}
+.apps_gotd {font-size:14px; color:#222;}
+
+/*地图图片*/
+.apps_pitrue { margin:0 ; padding:10px 0 15px; text-align: center;}

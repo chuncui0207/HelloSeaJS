@@ -1,0 +1,10 @@
+C:\Users\ChunCui\Desktop\InteceptionExtension\HelloSeaJS\bin\HelloSeaJS.dll
+C:\Users\ChunCui\Desktop\InteceptionExtension\HelloSeaJS\bin\HelloSeaJS.pdb
+C:\Users\ChunCui\Desktop\InteceptionExtension\HelloSeaJS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ChunCui\Desktop\InteceptionExtension\HelloSeaJS\obj\Debug\HelloSeaJS.dll
+C:\Users\ChunCui\Desktop\InteceptionExtension\HelloSeaJS\obj\Debug\HelloSeaJS.pdb
+D:\MyGit\HelloSeaJs\HelloSeaJS\bin\HelloSeaJS.dll
+D:\MyGit\HelloSeaJs\HelloSeaJS\bin\HelloSeaJS.pdb
+D:\MyGit\HelloSeaJs\HelloSeaJS\obj\Debug\ResolveAssemblyReference.cache
+D:\MyGit\HelloSeaJs\HelloSeaJS\obj\Debug\HelloSeaJS.dll
+D:\MyGit\HelloSeaJs\HelloSeaJS\obj\Debug\HelloSeaJS.pdb

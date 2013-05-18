@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<!-- saved from url=(0028)http://localhost:8080/MyBus/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Cache-Control" content="max-age=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=2.0;" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+<title>南宁无线城市掌上公交</title>
+<link href="./南宁无线城市掌上公交_files/apps_reset.css" rel="stylesheet" type="text/css">
+<link href="./南宁无线城市掌上公交_files/bus.css" rel="stylesheet" type="text/css">
+<link href="./南宁无线城市掌上公交_files/touch_common.css" rel="stylesheet" type="text/css">
+
+<script src="./南宁无线城市掌上公交_files/jquery.js"></script>
+<!--<script src="./南宁无线城市掌上公交_files/comm.js"></script>-->
+<script src="./南宁无线城市掌上公交_files/touchslider.js"></script>
+</head>
+<body>
+	
+
+
+<!-- <link href="/MyBus/css/common.css" rel="stylesheet" type="text/css" /> -->
+<!-- 
+<div class="topbar">
+ 	<div class="topcity">
+	  .南宁
+	  <a href="http://wap.gx.10086.cn/wxcs/nanning/csqh.3.jsp">切换</a>
+  	</div>
+</div>
+   <div class="tbar">
+     <p><a href="/MyBus">掌上公交</a></p></div>
+     --> 
+	<link href="http://guangzhou.wap.wxcs.cn/bcp-server/ajax/requestHeaderBottomStyle.do?portaltype=&version=3&screenwidth=&areaCode=440100" rel="stylesheet">    <div class="wrap">		<a href="http://localhost:8080/MyBus/#" id="gotop" name="gotop"></a>    <div class="dockbar_home">    	<div class="logo" style="cursor:pointer" onclick="location.href=&#39;http://guangzhou.wap.wxcs.cn/m/index&#39;"></div>    	<span class="cityon"><a class="cityon">广州</a></span><a href="http://wap.wxcs.cn/nav/navTouch.jsp?localAreaId=440100&areaName=guangzhou&jumpType=1" class="cityarrow"><img alt="" src="./南宁无线城市掌上公交_files/arrow.png"></a>      	<div class="userStatus">       		      			<a onclick="toRegister();" style="cursor:pointer;" class="name_a"> 注册</a>      			<a onclick="toLogin();" style="cursor:pointer;" class="exit_a">登录</a>      		      	</div>    </div>        <div style="display: none;" class="pop_category">     	<p><span>全部分类</span><a href="http://localhost:8080/MyBus/#" class="pop_close">关闭</a></p>    	<ul> 			<li><a href="http://guangzhou.wap.wxcs.cn/m/index">首页</a></li>    		<li><a href="http://guangzhou.wap.wxcs.cn/m/yyzx?areaName=guangzhou&jumpType=1">应用中心</a></li>    		    			<li><a href="http://guangzhou.wap.wxcs.cn/m/jtcx?areaName=guangzhou&jumpType=1">交通出行</a></li><li><a href="http://guangzhou.wap.wxcs.cn/m/pxjy?areaName=guangzhou&jumpType=1">培训教育</a></li><li><a href="http://guangzhou.wap.wxcs.cn/m/ylbj?areaName=guangzhou&jumpType=1">医疗保健</a></li><li><a href="http://guangzhou.wap.wxcs.cn/m/qzjy?areaName=guangzhou&jumpType=1">求职就业</a></li><li><a href="http://guangzhou.wap.wxcs.cn/m/wxzw?areaName=guangzhou&jumpType=1">无线政务</a></li><li><a href="http://guangzhou.wap.wxcs.cn/m/gwxx?areaName=guangzhou&jumpType=1">购物休闲</a></li><li><a href="http://guangzhou.wap.wxcs.cn/m/shfw?areaName=guangzhou&jumpType=1">生活服务</a></li>    		    		<!--<li><a href="http://guangzhou.wap.wxcs.cn/m/jpts?areaName=guangzhou&jumpType=1">精品特色</a></li>-->					 </ul>	</div>    </div>
+	 <div class="apps_main">
+	 	<div class="apps_content">
+	        <div class="apps_tabbox">
+	          <ul id="pagenavi1" class="apps_tabul">
+	            <li class="apps_cur">
+	                站点查询
+	            </li>
+	            <li>
+	                线路查询
+	            </li>
+	            <li>
+	                换乘查询
+	            </li>
+	          </ul>
+	       <div id="slider1" class="apps_search" style="height: 130px; overflow: hidden; visibility: visible; list-style: none; position: relative;">
+	       
+            <ul class="apps_searchbox" style="width: 2364px; left: 0px; transition: left 0ms ease-out; -webkit-transition: left 0ms ease-out; position: relative;">
+              
+              <!--站点查询文本输入区start-->
+              <li id="apps_tabresult1" class="apps_tabw apps_tab1" style="height: 130px; width: 788px; padding: 0px; margin: 0px; float: left; vertical-align: top; display: table-cell;">
+                <form action="http://localhost:8080/MyBus/StationQuery" method="get">
+                  <table width="200" border="0" cellpadding="0" cellspacing="0" class="apps_search_table" style="margin-top: 50px;">
+                    <tbody><tr>
+                      <td>
+                        <input id="stationName" name="station" type="text" class="apps_input_text" >
+                       </td>
+                       <td class="apps_forlbbtn">
+                         <input type="submit" value="查询" class="apps_lbbtn">
+                       </td>
+                    </tr>
+                    <!--录入空白提示start-->
+                    <tr id="error_station" class="apps_inputtips"> 
+                    </tr>
+                    <!--录入空白提示end-->
+                  </tbody></table>
+                </form>
+              </li>
+                <!--站点查询文本输入区end-->
+
+                <!--线路查询文本输入区start-->
+                <li id="apps_tabresult2" class="apps_tabw apps_tab2" style="display: table-cell; height: 130px; width: 788px; padding: 0px; margin: 0px; float: left; vertical-align: top;">
+                    <form action="http://localhost:8080/MyBus/LineQuery" method="get">
+                        <table width="200" border="0" cellpadding="0" cellspacing="0" class="apps_search_table" style="margin-top: 50px;">
+                            <tbody><tr>
+                                <td>
+                                    <input id="lineName" name="line" type="text" class="apps_input_text">
+                                </td>
+                                <td class="apps_forlbbtn">
+                                    <input type="submit" value="查询" class="apps_lbbtn">
+                                </td>
+                            </tr>
+                            <!--录入空白提示start-->
+                            <tr id="error_line" class="apps_inputtips">
+                            </tr>
+                            <!--录入空白提示end-->
+                        </tbody></table>
+                    </form>
+                </li>
+                <!--线路查询文本输入区end-->
+
+                <!--换乘查询文本输入区start-->
+                <li id="apps_tabresult3" class="apps_tabw apps_tab3" style="display: table-cell; height: 130px; width: 788px; padding: 0px; margin: 0px; float: left; vertical-align: top;">
+                    <form action="http://localhost:8080/MyBus/ChangeQuery" method="get">
+                        <table width="200" border="0" cellpadding="0" cellspacing="0" class="apps_search_table">
+                            <tbody><tr id="apps_bp" class="apps_bpadding">
+                                <td class="apps_have_ico">
+                                    <img src="./南宁无线城市掌上公交_files/begain.png" width="28" height="28">
+                                </td>
+                                <td style="padding-left: 0; padding-right: 0;">
+                                    <input id="nameS" name="from" type="text" class="apps_input_text">
+                                </td>
+                                <td class="apps_btstar" style="padding-left:2px; ">
+                                    *
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!--录入空白提示start-->
+                            <tr id="error_change1" class="apps_inputtips apps_hs">
+                            </tr>
+                            <!--录入空白提示end-->
+                            <tr>
+                                <td class="apps_have_ico">
+                                    <img src="./南宁无线城市掌上公交_files/end.png" width="28" height="28">
+                                </td>
+                                <td style="padding-left: 0; padding-right: 0;">
+                                    <input id="nameE" name="to" type="text" class="apps_input_text">
+                                </td>
+                                <td class="apps_btstar" style="padding-left:2px; ">
+                                    *
+                                </td>
+                                <td class="apps_forlbbtn">
+                                    <input type="submit" value="查询" class="apps_lbbtn">
+                                </td>
+                            </tr>
+                            <!--录入空白提示start-->
+                            <tr id="error_change2" class="apps_inputtips apps_hs">
+                            </tr>
+                            <!--录入空白提示end-->
+                        </tbody></table>
+                    </form>
+                </li>
+            </ul>
+              <!--换乘查询文本输入区end-->
+          </div>
+	          </div>
+          </div>
+	 	
+	 
+	 
+	<div style="padding: 5px 10px 0px 5px;">
+		(如有疑问可拨打12580人工服务，可为您提供查询、指路服务。)
+	</div>
+	
+	
+	<div style="padding: 5px 10px 0px 5px;float: right;">
+		推荐掌上公交给您的好友吧:
+		<a href="http://share.v.t.qq.com/index.php?c=share&a=index&url=http://bus.wxgx.cn&title=%E5%88%AB%E8%AF%B4%E6%9C%89%E5%A5%BD%E4%B8%9C%E8%A5%BF%E4%B8%8D%E5%91%8A%E8%AF%89%E4%BD%A0%EF%BC%81%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8@%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E5%B9%BF%E8%A5%BF%E5%85%AC%E5%8F%B8%20%E6%97%A0%E7%BA%BF%E5%9F%8E%E5%B8%82%E6%8E%8C%E4%B8%8A%E5%85%AC%E4%BA%A4%EF%BC%8C%E5%AE%83%E8%83%BD%E6%8F%90%E5%89%8D%E9%A2%84%E7%9F%A5%E5%8D%97%E5%AE%81%E3%80%81%E6%9F%B3%E5%B7%9E%E5%85%AC%E8%BD%A6%E5%AE%9E%E6%97%B6%E5%88%B0%E7%AB%99%E6%83%85%E5%86%B5%EF%BC%8C%E4%BB%8E%E6%AD%A4%E5%85%AC%E8%BD%A6%E4%B8%8D%E7%94%A8%E7%AD%89%EF%BC%81%E7%8E%B0%E5%9C%A8%E6%9B%B4%E6%9C%89%E2%80%9C%E6%8E%A8%E8%8D%90%E9%80%81%E7%BA%A2%E5%8C%85%E2%80%9D%E6%B4%BB%E5%8A%A8%EF%BC%8C%E4%BD%A0%E4%B9%9F%E5%BF%AB%E6%9D%A5%E7%94%A8%EF%BC%8C%E6%88%91%E4%BB%AC%E4%B8%80%E8%B5%B7%E8%B5%9A%E7%BA%A2%E5%8C%85%EF%BC%81%E7%82%B9%E5%87%BB%E4%BD%BF%E7%94%A8">
+			<img alt="图片" src="./南宁无线城市掌上公交_files/txwb.gif" width="20px" height="20px">
+		</a>
+		<a href="http://weibo.cn/ext/share?ru=http://bus.wxgx.cn&rt=%E5%88%AB%E8%AF%B4%E6%9C%89%E5%A5%BD%E4%B8%9C%E8%A5%BF%E4%B8%8D%E5%91%8A%E8%AF%89%E4%BD%A0%EF%BC%81%E6%88%91%E6%AD%A3%E5%9C%A8%E4%BD%BF%E7%94%A8@%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E5%B9%BF%E8%A5%BF%E5%85%AC%E5%8F%B8%20%E6%97%A0%E7%BA%BF%E5%9F%8E%E5%B8%82%E6%8E%8C%E4%B8%8A%E5%85%AC%E4%BA%A4%EF%BC%8C%E5%AE%83%E8%83%BD%E6%8F%90%E5%89%8D%E9%A2%84%E7%9F%A5%E5%8D%97%E5%AE%81%E3%80%81%E6%9F%B3%E5%B7%9E%E5%85%AC%E8%BD%A6%E5%AE%9E%E6%97%B6%E5%88%B0%E7%AB%99%E6%83%85%E5%86%B5%EF%BC%8C%E4%BB%8E%E6%AD%A4%E5%85%AC%E8%BD%A6%E4%B8%8D%E7%94%A8%E7%AD%89%EF%BC%81%E7%8E%B0%E5%9C%A8%E6%9B%B4%E6%9C%89%E2%80%9C%E6%8E%A8%E8%8D%90%E9%80%81%E7%BA%A2%E5%8C%85%E2%80%9D%E6%B4%BB%E5%8A%A8%EF%BC%8C%E4%BD%A0%E4%B9%9F%E5%BF%AB%E6%9D%A5%E7%94%A8%EF%BC%8C%E6%88%91%E4%BB%AC%E4%B8%80%E8%B5%B7%E8%B5%9A%E7%BA%A2%E5%8C%85%EF%BC%81%E7%82%B9%E5%87%BB%E4%BD%BF%E7%94%A8">
+			<img alt="图片" src="./南宁无线城市掌上公交_files/xlwb.gif" width="20px" height="20px">
+		</a>
+	</div>
+	<div class="clear"></div>
+	
+
+
+
+
+
+
+<title>广西移动-无线城市-麻辣播报</title>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0">
+<link href="./南宁无线城市掌上公交_files/touch.css" rel="stylesheet" type="text/css">
+
+
+
+<div id="wrapper">
+    <div id="gxnettv">
+      <div id="gxnettv_nav">
+      	<div id="gxnettv_nav_left" class="fs16 white">麻辣播报</div>
+        <div id="gxnettv_nav_right"> <!-- <a href="javascript:window.close();"><img src="http://wxcs.gxnews.com.cn//widget/images/close.jpg" width="68" height="36" alt="" /></a> --></div>
+      </div>
+      <div id="gxnettv_news" class="fs16 blue">
+     <a href="http://wxgx.wap.gxnews.com.cn/article.php?id=22050" target="_blank">【警惕】喝零度葡萄酒也有可能测出酒驾</a><br>
+<a href="http://wxgx.wap.gxnews.com.cn/article.php?id=22046" target="_blank">【社会】5名大学生徒步被困 消防员救援</a><br>
+<a href="http://wxgx.wap.gxnews.com.cn/article.php?id=22049" target="_blank">【疑问】"站街"考核能做到公平公正吗？</a><br>
+<a href="http://wxgx.wap.gxnews.com.cn/article.php?id=22047" target="_blank">【残忍】19岁少女手臂被男友砍成三截</a><br>
+<a href="http://wxgx.wap.gxnews.com.cn/article.php?id=22045" target="_blank">【社会】女子随手指情夫 无辜路人被杀</a><br>
+<a href="http://wxgx.wap.gxnews.com.cn/article.php?id=22048" target="_blank">【社会】流浪汉想吃"牢饭" 假冒"艾滋男"</a><br>
+    </div>
+    </div>
+</div>
+
+
+<div class="apps_container apps_title_head">掌上公交客户端下载</div>	
+<div style="padding:5px 0px 0px 5px;background-color:#F0F8F9;">
+	<a href="http://m.mygolbs.com/dl/MyBus.jar">
+		<img alt="loading" src="./南宁无线城市掌上公交_files/java_btn.png" width="140">
+	</a>
+	<a href="http://m.mygolbs.com/dl/MyBus.apk">
+		<img alt="loading" src="./南宁无线城市掌上公交_files/android_btn.png" width="140">
+	</a>
+	<a href="http://itunes.apple.com/cn/app/id461317017">
+		<img alt="loading" src="./南宁无线城市掌上公交_files/ios_btn.png" width="140">
+	</a>
+	<!-- 
+	&nbsp;
+	<a href="http://117.141.120.71/dl/MyBus4.ipa">
+		<img alt="loading" src="/MyBus/img_down/dios.png" width="50"/>
+	</a>
+	 -->
+</div>
+
+	
+	
+
+<div class="apps_container apps_title_head">
+<p>
+	<!-- <a href="/MyBus/FavQuery?r=15:47:48">收藏</a> - -->  
+    <a href="http://localhost:8080/MyBus/NewQuery">资讯</a> - 
+    <a href="http://localhost:8080/MyBus/AdviceWrite">意见</a> - 
+    <a href="http://localhost:8080/MyBus/HelpQuery">帮助</a>
+    <a>15:47:48</a>
+</p>
+</div>
+
+<div class="foot">
+<p>
+<a href="http://yyzl.gx12580.net/wap_index.action?id=nanning&area=nanning&version=3&token=&mobile=&columnid=4110">
+<img alt="loading" src="./南宁无线城市掌上公交_files/yymz.jpg" width="110px;">
+</a>
+&nbsp;
+<a href="http://ujp.cm/8zXT">
+<img alt="loading" src="./南宁无线城市掌上公交_files/ssq.jpg" width="125px;">
+</a>
+</p><div>
+<a href="http://wap.gx.10086.cn/wxcs/wap/index.jsp">&gt;&gt;返回首页</a>
+</div>
+<p></p>
+<script>jQuery(function(){	jQuery(".pop_win").appendTo("body");});</script>	     	    	<!-- review end-->         <div class="wrap">			<div class="goto_top"><a class="gotop" href="http://localhost:8080/MyBus/#gotop"><img alt="top" src="./南宁无线城市掌上公交_files/top_icon.png"></a> </div>            <!--<div class="switch_version">  <a class="fnavon">  简版</a> <a class="fnavon">  3G版</a><a class="fnavon">触屏版</a></div>-->        </div>        <div class="copyright">        	 中国移动通信版权所有 粤08034647-12号        </div>    	<div class="pop_bg" style="display: none;"></div>        <script type="text/javascript" src="./南宁无线城市掌上公交_files/jquery(1).js"></script>    <script type="text/javascript" src="./南宁无线城市掌上公交_files/requestHeaderBottomJs.do"></script>
+<!-- 
+桂ICP证B2-2-1-1-2002010号<br />
+中国移动通信集团广西有限公司
+-->
+</div>
+
+	</div>
+	<script type="text/javascript">
+		  var page='pagenavi1';
+		  var mslide='slider1';
+		  var as=document.getElementById(page).getElementsByTagName('li');
+		  var tt=new TouchSlider({id:mslide,'auto':'-1',fx:'ease-out',direction:'left',speed:600,timeout:5000,'before':function(index){
+		  var as=document.getElementById(this.page).getElementsByTagName('li');
+		  as[this.p].className='';
+		  as[index].className='apps_cur';
+		  this.p=index;
+		  }});
+		  tt.page = page;
+		  tt.p = 0;
+		  for(var i=0;i<as.length;i++){
+		    (function(){
+			  var j=i;
+			  as[j].tt = tt;
+			  as[j].onclick=function(){
+			   this.tt.slide(j);
+			   return false;
+				  }
+			  })();
+		  }
+	  </script> 
+
+	<div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div>
+<script type="text/javascript">
+    //var $j = jQuery.noConflict();
+    ObjInput = document.getElementsByTagName("input");
+    for (i = 0; i < ObjInput.length; i++) {
+        if (ObjInput[i].type == "text") {
+            ObjInput[i].onclick = function() {
+                this.focus();
+            };
+        }
+    }
+</script> 
+</body></html>

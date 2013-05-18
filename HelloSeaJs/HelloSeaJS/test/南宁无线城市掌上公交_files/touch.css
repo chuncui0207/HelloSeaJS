@@ -1,0 +1,119 @@
+@charset "utf-8";
+body {
+	font-family: 微软雅黑, 'Microsoft YaHei', \5FAE\8F6F\96C5\9ED1, sans-serif;
+}
+
+.fs12 { font-size: 12px; }
+.fs14 { font-size: 14px; }
+.fs16 { font-size: 16px; }
+.fs18 { font-size: 18px; }
+
+.white {
+	color: #FFF;
+}
+.white a{
+	color: #FFF;
+}
+.black {
+	color: #545454;
+}
+.black a{
+	color: #545454;
+}
+.blue {
+	color: #3F599E;
+}
+.blue a{
+	color: #3F599E;
+}
+.blue2 {
+	color: #6579B2;
+}
+.blue2 a{
+	color: #6579B2;
+}
+.orange {
+	color: #FC4519;
+}
+.orange a{
+	color: #FC4519;
+}
+
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;padding:0;
+}
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+	text-decoration:underline;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+	text-decoration:none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,.fn-right {
+	display:inline;
+}
+.fn-left {
+	float:left;
+}
+.fn-right {
+	float:right;
+}
+
+/* 清理浮动 */
+.clear
+{
+	clear: both;
+}
+
+#wrapper {
+	width: 100%-2px;
+	margin: 0 auto;
+	border: 1px solid #4E5F8A;
+}
+
+#gxnettv {
+}
+#gxnettv_nav {
+	background: url(../images/touch_r18_c1.jpg);
+	height: 36px;
+}
+#gxnettv_nav_left {
+	float: left;
+	line-height: 36px;
+	padding-left: 28px;
+}
+#gxnettv_nav_right {
+	float: right;
+}
+#gxnettv_pic ul{
+}
+#gxnettv_pic li{
+	width: 139px;
+	height: 149px;
+	line-height: 20px;
+	float: left;
+	display: inline;
+	margin: 10px;
+	font-size: 14px;
+	list-style-type: none;
+}
+#gxnettv_pic li img{
+	display: block;
+	margin-bottom: 5px;
+	padding: 1px;
+	border: 1px solid #9EB3D1;
+}
+#gxnettv_news {
+	line-height: 36px;
+	padding: 10px;
+}
+a img{
+	border:0;
+}
